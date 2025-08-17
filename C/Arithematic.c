@@ -5,4 +5,5 @@ int main()
     a=14;b=4;c=a+b;d=a-b;
     printf("Addition is=%d \n",c );
     printf("Subtraction is=%d \n",d);
+     return 0;
 }
