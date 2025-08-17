@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    float radius;float pi=3.14;
-    float side;
-    float length;float breath;
-    float base;float height;
+    float radius;float pi=3.14;//circle
+    float side; //square
+    float length;float breath;//rectangle
+    float base;float height;//triangle
     //circle
     printf("Enter the radius of the circle: ");scanf("%f",&radius);
     printf("Area of circle is:%f \n",pi*radius*radius);
