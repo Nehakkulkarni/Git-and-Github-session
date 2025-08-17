@@ -5,12 +5,10 @@ int main()
     a=14;b=4;c=a+b;d=a-b;
     printf("Addition is=%d \n",c );
     printf("Subtraction is=%d \n",d);
-   
-	
-	multi=a*b;div=a/b;
+    multi=a*b;div=a/b;
 	printf("Multiplication is:%d \n",multi);
 	printf("Division is:%d \n ",div);
 	return 0;
 }
 
-}
+
