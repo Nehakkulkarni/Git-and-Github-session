@@ -3,12 +3,20 @@ int main()
 {
     //for addition,subtraction,multiplication,division.
     int a,b,c,d ,multi,div;
-    a=14;b=4;c=a+b;d=a-b;
+    a=14;
+	b=4;
+	c=a+b;
+	d=a-b;
+	
     printf("Addition is=%d \n",c );
     printf("Subtraction is=%d \n",d);
-    multi=a*b;div=a/b;
+	
+    multi=a*b;
+	div=a/b;
+	
 	printf("Multiplication is:%d \n",multi);
 	printf("Division is:%d \n ",div);
+	
 	return 0;
 }
 
