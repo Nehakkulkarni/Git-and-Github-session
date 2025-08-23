@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+    //for addition,subtraction,multiplication,division.
     int a,b,c,d ,multi,div;
     a=14;b=4;c=a+b;d=a-b;
     printf("Addition is=%d \n",c );

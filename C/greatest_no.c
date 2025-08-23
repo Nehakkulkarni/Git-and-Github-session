@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int main(void)
 {
     int a,b;
     printf("Enter first number a:");
@@ -14,6 +14,5 @@ int main()
     {
         printf("b is greater than a");
     }
-    return 0;
 }
 
