@@ -6,6 +6,7 @@ float Circlearea(float radius);
 float Squarearea(float side);
 float rectanglearea(float lenght,float breath);
 float trianglearea(float base,float height);
+float hexagonarea(float side);
 
 int main()
 {
@@ -17,8 +18,9 @@ int main()
 	printf("\t2. Area of Square\n");
 	printf("\t3. Area of rectangle\n");
 	printf("\t4. Area of triangle\n");
+	printf("\t4. Area of hexagon \n");
 	printf("\t5. Exit the program\n");
-	printf("\n\tEnter your choice (1-5):");
+	printf("\n\t Enter your choice (1-5):");
 	scanf("%d", &choice);
 	switch(choice)
 	{
@@ -50,7 +52,12 @@ int main()
 		printf("Area of triangle:%f",trianglearea( base, height));
 		break;
 
-	case 5:
+    case 5:
+        printf("enter side of hexagon:");
+		scanf("%f",&side);
+		printf("Area of hexagon:%f",hexagonarea(float side) );
+
+	case 6:
 		printf("Exit,Goodbye");
 		exit(0);
 		break;
@@ -84,4 +91,9 @@ float rectanglearea(float length,float breath)
 float trianglearea(float base,float height)
 {
 	return 0.5*base*height;
+}
+float hexagonarea(float side)
+{
+   return (3*1.732)*side*side;
+   
 }
