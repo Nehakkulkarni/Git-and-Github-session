@@ -1,17 +1,19 @@
 #include<stdio.h>
-int m()
-int inches()
-int cm()
-int feet()
+#include<stdlib.h>
+
+int convert2meter(int km);
+int convert2inches(int km);
+int convert2centimeter(int km);
+int convert2feet(int km);
 
 int main()
 {
    int km,m,feet,inches,cm;
    int choice;
    printf("Enter distance between two cities km :");
-   scanf("%d",km);
+   scanf("%d",&km);
     
-     printf("*** Program for Distance! ***\n\n");
+    printf("*** Program for Distance! ***\n\n");
 	printf("\t1. meters\n");
 	printf("\t2. centimeters\n");
 	printf("\t3. feet\n");
@@ -22,19 +24,19 @@ int main()
 	switch(choice)
 	{
 	case 1:
-		
+		printf("\tDistance in meter: %d", convert2meter(km) );
 		break;
 
 	case 2:
-		
+		printf("\tDistance in inches is: %d",convert2inches( km)  );
 		break;
 
 	case 3:
-	
+	     printf("\tDistance in centimeter is: %d", convert2centimeter( km) );
 		break;
 
 	case 4:
-		
+		printf("\tDistance in feet is: %d", convert2feet( km) );
 		break;
 
 	case 5:
@@ -46,32 +48,44 @@ int main()
 		printf("Invalid input");
 
 	}
-  
-  
-  
+ 
   
 }
-int m()
+
+int convert2meter(int km)
 {
+   int m;
    m=km*1000;
    return m;
 
 }
-int inches()
+
+int convert2inches(int km)
 {
+    int inches;
    inches=km*39370.1;
    return inches;
 }
-int cm()
+
+int convert2centimeter(int km)
 {
+    int cm;
    cm=km*100000;
    return cm;
 }
-int feet()
+
+int convert2feet(int km)
 {
+    int feet;
     feet=km*3280.84;
     return feet;
 }
+
+
+
+
+
+
 
 
 
