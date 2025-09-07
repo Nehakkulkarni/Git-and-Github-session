@@ -15,5 +15,5 @@ int main(void)
 	scanf("%d",&eng);
 	sum=phy+chem+math+eng+it;
 	avg=sum/5;
-	printf("final marks are:%f",avg);
+	printf("final marks are:%f \n",avg);
 }

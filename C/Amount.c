@@ -9,6 +9,6 @@ int main(void)
     hra=(base_salary*20)/100;
     gs=base_salary+da+hra;
 
-    printf("Gross salary is :%f",gs);
+    printf("Gross salary is :%f \n",gs);
     return 0;
 }

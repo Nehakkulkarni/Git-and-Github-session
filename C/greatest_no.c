@@ -8,11 +8,11 @@ int main(void)
     scanf("%d",&b);
     if(a>b)
     {
-        printf("a is greater than b");
+        printf("a is greater than b \n");
     }
     else 
     {
-        printf("b is greater than a");
+        printf("b is greater than a \n");
     }
 }
 

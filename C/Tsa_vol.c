@@ -34,22 +34,22 @@ int main() {
     case 2:
         printf("Enter the length, breath, and height of the cuboid: ");
         scanf("%f %f %f", &length, &breath, &height);
-        printf("The tsa and Volume of cuboid is :%f ", Cuboid( length, breath, height));
+        printf("The tsa and Volume of cuboid is :%f  \n", Cuboid( length, breath, height));
         break;
     case 3:
         printf("Enter the base side, base height, and prism height : ");
         scanf("%f %f %f %f %f ", &base_area,&base_perimeter,&prism_height,&area_base,&height);
-         printf("The tsa and Volume of prism is :%f ",Prism( base_area, base_perimeter, prism_height, area_base, height));
+         printf("The tsa and Volume of prism is :%f \n",Prism( base_area, base_perimeter, prism_height, area_base, height));
         break;
     case 4:
           printf("Enter the radius and height of a Cylinder:");
           scanf("%f %f",&radius,&height);
-           printf("The tsa and Volume of Cylinder is :%f ", Cylinder( radius, height));
+           printf("The tsa and Volume of Cylinder is :%f  \n", Cylinder( radius, height));
           break;
     case 5:
           printf("Enter the radius and height and length of a Cone:");
           scanf("%f %f %f",&radius,&height,&length);
-           printf("The tsa and Volume of Cone is :%f ",Cone(  radius, length, height));
+           printf("The tsa and Volume of Cone is :%f \n",Cone(radius, length, height));
           break;
     default:
         printf("Invalid input\n");
