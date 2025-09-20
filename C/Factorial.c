@@ -1,10 +1,17 @@
 #include<stdio.h>
 int fact(int n);
+
 int main()
 {   
-    printf("factorial is:%d",fact(8));
+    int input_number;
+    printf("\nEnter number to calculate the factorial -> ");
+    scanf("%d",&input_number);
+    
+    printf("factorial is:%d",fact(input_number));
     return 0;
 }
+
+
 int fact(int n)
 {
     if(n==0)
@@ -15,5 +22,4 @@ int fact(int n)
     int factn = factn1*n;
     return factn;
 }
- 
  
